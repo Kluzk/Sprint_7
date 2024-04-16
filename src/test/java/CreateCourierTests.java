@@ -2,11 +2,11 @@ import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 
-public class CreateCourierTests extends BaseTest {
+public class CreateCourierTests extends BaseCourierTests {
 
     @Test
-    @DisplayName("Создание курьера")
-    @Description("Создание нового курьера")
+    @DisplayName("Проверка создания курьера")
+    @Description("Проверка создания нового курьера")
     public void checkCreateCourier() {
         createCourier(LOGIN, PASSWORD, FIRST_NAME)
             .then()
